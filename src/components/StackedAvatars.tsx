@@ -15,7 +15,7 @@ function StackedAvatars() {
     if (imageurl.length > 0) {
       items.push(
         <img
-          className="rounded-full border-4 border-white h-20 w-20"
+          className="rounded-full border-4 border-white h-20 w-20 hover:m-2"
           src={imageurl[0]}
           alt=""
         ></img>
@@ -25,7 +25,7 @@ function StackedAvatars() {
       for (let i = 1; i < imageurl.length; i++) {
         items.push(
           <img
-            className="rounded-full border-4 border-white h-20 w-20 -ml-8"
+            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
             src={imageurl[i]}
             alt=""
           ></img>
@@ -42,22 +42,22 @@ function StackedAvatars() {
       <div className="py-5 px-5 ">
         <div className="flex">
           <img
-            className="rounded-full border-4 border-white h-20 w-20"
+            className="rounded-full border-4 border-white h-20 w-20 hover:m-2"
             src={imageurl[0]}
             alt=""
           ></img>
           <img
-            className="rounded-full border-4 border-white h-20 w-20 -ml-8"
+            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
             src={imageurl[1]}
             alt=""
           ></img>
           <img
-            className="rounded-full border-4 border-white h-20 w-20 -ml-8"
+            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
             src={imageurl[2]}
             alt=""
           ></img>
           <img
-            className="rounded-full border-4 border-white h-20 w-20 -ml-8"
+            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
             src={imageurl[3]}
             alt=""
           ></img>
