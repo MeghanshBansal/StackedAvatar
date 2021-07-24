@@ -38,33 +38,30 @@ function StackedAvatars() {
       </div>
     );
   } else {
+    items.push(
+      <img
+        className="rounded-full border-4 border-white h-20 w-20 hover:m-2"
+        src={imageurl[0]}
+        alt=""
+      ></img>
+    );
+    for (let i = 1; i < 4; i++) {
+      items.push(
+        <img
+          className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
+          src={imageurl[i]}
+          alt=""
+        ></img>
+      );
+    }
+    items.push(
+      <span className="flex items-center justify-center font-semibold bg-gray-200 text-gray-600 rounded-full border-4 border-white h-20 w-20 -ml-8">
+        +{imageurl.length - 4}
+      </span>
+    );
     return (
       <div className="py-5 px-5 ">
-        <div className="flex">
-          <img
-            className="rounded-full border-4 border-white h-20 w-20 hover:m-2"
-            src={imageurl[0]}
-            alt=""
-          ></img>
-          <img
-            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
-            src={imageurl[1]}
-            alt=""
-          ></img>
-          <img
-            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
-            src={imageurl[2]}
-            alt=""
-          ></img>
-          <img
-            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
-            src={imageurl[3]}
-            alt=""
-          ></img>
-          <span className="flex items-center justify-center font-semibold bg-gray-200 text-gray-600 rounded-full border-4 border-white h-20 w-20 -ml-8">
-            +{imageurl.length - 4}
-          </span>
-        </div>
+        <div className="flex">{items}</div>
       </div>
     );
   }
