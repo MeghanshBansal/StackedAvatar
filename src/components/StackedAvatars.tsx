@@ -15,7 +15,7 @@ function StackedAvatars() {
     if (imageurl.length > 0) {
       items.push(
         <img
-          className="rounded-full border-4 border-white h-20 w-20 hover:m-2"
+          className="rounded-full border-4 border-white h-20 w-20 hover:translate-y-3"
           src={imageurl[0]}
           alt=""
         ></img>
@@ -25,7 +25,7 @@ function StackedAvatars() {
       for (let i = 1; i < imageurl.length; i++) {
         items.push(
           <img
-            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
+            className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:translate-y-3"
             src={imageurl[i]}
             alt=""
           ></img>
@@ -40,7 +40,7 @@ function StackedAvatars() {
   } else {
     items.push(
       <img
-        className="rounded-full border-4 border-white h-20 w-20 hover:m-2"
+        className="rounded-full border-4 border-white h-20 w-20 hover:translate-y-3"
         src={imageurl[0]}
         alt=""
       ></img>
@@ -48,7 +48,7 @@ function StackedAvatars() {
     for (let i = 1; i < 4; i++) {
       items.push(
         <img
-          className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:m-2"
+          className="rounded-full border-4 border-white h-20 w-20 -ml-8 hover:translate-y-3"
           src={imageurl[i]}
           alt=""
         ></img>
